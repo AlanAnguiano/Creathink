@@ -1,0 +1,97 @@
+/*reseteo del css de todo el html*/
+*{
+	
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	color: #FFF;
+	font-family: "Questrial","Sacramento","Comfortaa", sans-serif;
+}
+/*nueva fuente*/
+
+/*diseños generales*/
+
+.global{
+	width: 100%;
+	height: 100%;
+	background-image: url("main.jpg");
+	background-size: cover;
+	display: flex;
+}
+.contMenu{
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	display: flex;
+	
+}
+.contLogo{
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.logo{
+	width: 30%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	
+	font-family: Sacramento;
+	font-size: 40px;
+}
+.contNav{
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+}
+nav{
+	width: 80%;
+	display: flex;
+	justify-content: center;
+}
+ul{
+	height: 100%;
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+
+
+}
+li{
+	font-size: 20px;
+	text-align: center;
+	height: 100%;
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+li:hover{
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.9);
+}
+.main{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.presentacion{
+	width: 60%;
+	height: 40%;
+	
+	
+}
+.sabemos{
+	width: 100%;
+	height: 50px;
+	color:#F01147;
+	font-size: 55px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+}

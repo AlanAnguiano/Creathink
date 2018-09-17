@@ -6,6 +6,10 @@
 	margin: 0px;
 	color: #FFF;
 	font-family: "Questrial","Sacramento","Comfortaa", sans-serif;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
 }
 /*nueva fuente*/
 
@@ -83,19 +87,17 @@ li:hover{
 }
 .presentacion{
 	width: 70%;
-	height: 30%;
-	
-	
+	height: auto;
 }
 .sabemos{
+	text-align: center;
 	letter-spacing: 7px;
 	width: 100%;
-	height: 70px;
+	height: auto;
 	color:#C3DCFF;
 	font-size: 65px;
 	font-weight: bold;
-	display: flex;
-	justify-content: center;
+	
 	
 }
 .sobre{
@@ -103,8 +105,10 @@ li:hover{
 	display: flex;
 	justify-content: center;
 	margin-top: 30px;
+	
 }
 .groupPresen{
+	
 	width: 50%;
 	height: 100%;
 }
@@ -136,7 +140,7 @@ li:hover{
 }
 .aqui{
 	margin-top: 20px;
-	width: 25%;
+	width: 150px;
 	height: 40px;
 	display: flex;
 	color:#C3DCFF; 
@@ -145,3 +149,17 @@ li:hover{
 	border: 2px solid #C3DCFF;
 	border-radius: 25px;
 }
+
+
+
+/*ESTA ZONA ESTA DEDICADA A TODO LO NECESARIO PARA HACER RESPONSIVA LA PAGINA*/
+
+/*@media only screen and (max-width: 1040px ){
+	.presentacion{
+		background-color: red;
+		width: 100%;
+	}
+	.groupPresen{
+		width: 100%;
+	}
+}*/

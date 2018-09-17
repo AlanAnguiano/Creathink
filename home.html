@@ -13,27 +13,24 @@
 	<div class="global">
 		
 		<!--En este lugar mas especificamente en el header se localiza el menu superior y el icono y/o logo de la empresa-->
-		<header>
-			<div class="contMenu">
-				
-				<div class="contLogo">
-					<div class="logo">
-						CreaThink
-					</div>
-				</div>
-				<div class="contNav">
-					<nav>
-						<ul>
-							<li>Inicio</li>
-							<li>Nosotros</li>
-							<li>Servicios</li>
-							<li>Contactanos</li>
-						</ul>
-					</nav>
+		<div id="contMenu">	
+			<div class="contLogo">
+				<div class="logo">
+					CreaThink
 				</div>
 			</div>
-		</header>
-		<div class="main">
+			<div class="contNav">
+				<nav>
+					<ul>
+						<li><a class ="ancla" data-ancla="main">Incio</a></li>
+						<li><a class ="ancla" data-ancla="nosotros">Nosotros</a></li>
+						<li><a class ="ancla" data-ancla="nosotros">Servicios</a></li>
+						<li><a class ="ancla" data-ancla="nosotros">Contactanos</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div id="main">
 
 			<div class="presentacion">
 				<div class="sabemos">Podemos leer tu mente</div>
@@ -56,7 +53,38 @@
 
 		</div>
 
+		<div id="nosotros">
+			<div class="globalUs">
+				<div class="nosotrosPrin">
+					<div class="sabemos">Nosotros</div>
+				</div>
+
+				<div class="desc">
+					<div class="card">
+						<div class="imgDesc"><img src="main3.jpg"></div>
+
+						<div class="zonaDesc">
+							<div class="subtitulo"><div>Quienes somos y que hacemos</div></div>
+
+							<div class="textDesc">
+								<div>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+
+			</div>			
+		</div>
 
 	</div>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

@@ -1,17 +1,17 @@
 /*reseteo del css de todo el html*/
 *{
-	
+	text-decoration: none;
 	height: 100%;
 	padding: 0px;
 	margin: 0px;
 	color: #FFF;
 	font-family: "Questrial","Sacramento","Comfortaa", sans-serif;
-	-webkit-user-select: none;
+	/*-webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none; 
+    user-select: none; */
+
 }
-/*nueva fuente*/
 
 /*diseños generales*/
 
@@ -20,14 +20,15 @@
 	height: 100%;
 	background-image: url("main3.jpg");
 	background-size: cover;
-	display: flex;
 }
-.contMenu{
+#contMenu{
 	width: 100%;
 	height: 70px;
 	position: fixed;
-	display: flex;
-	
+	display: flex;	
+}
+.color{
+	background-color: rgba(0,0,0,0.9);
 }
 .contLogo{
 	width: 50%;
@@ -63,7 +64,7 @@ ul{
 
 
 }
-li{
+a{
 	font-size: 20px;
 	text-align: center;
 	height: 100%;
@@ -73,12 +74,12 @@ li{
 	justify-content: center;
 
 }
-li:hover{
+a:hover{
 	cursor: pointer;
 	color:#C3DCFF;
 
 }
-.main{
+#main{
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -139,19 +140,100 @@ li:hover{
 	justify-content: center;
 }
 .aqui{
-	margin-top: 20px;
+	margin-top: 60px;
 	width: 150px;
 	height: 40px;
 	display: flex;
+	font-size: 20px;
 	color:#C3DCFF; 
 	justify-content: center;
 	align-items: center;
 	border: 2px solid #C3DCFF;
 	border-radius: 25px;
 }
+.aqui:hover{
+	cursor: pointer;
+	background-color: #C3DCFF;
+	
+	color: #fff;
+}
+
+/*SECCION DE ESTILOS DE NOSOTROS*/
+
+#nosotros{
+	width: 100%;
+	background-color: #383b4f;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.globalUs{
+	width: 70%;
+	height: 80%;
+}
+.nosotrosPrin{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.desc{
+	width: 100%;
+	height: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card{
+	width: 100%;
+	height: 83%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #272935;
+}
+.imgDesc{
+	width: 35%;
+	height: 60%;
+	margin-right: 50px;
+	background-color: yellow;
+}
+.imgDesc img{
+	width: 100%;
+	height: 100%;
+}
+.zonaDesc{
+	width: 55%;
+	height: 60%;
+}
 
 
-
+.subtitulo{
+	width: 100%;
+	height: 20%;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	font-size: 30px;
+	border-bottom: 1px solid #e6e7ef;
+}
+.subtitulo div{
+	height: auto;
+}
+.textDesc{
+	width: 100%;
+	height: 80%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.textDesc div{
+	width: 90%;
+	height: 90%;
+	text-align: center;
+	font-size: 20px;
+}
 /*ESTA ZONA ESTA DEDICADA A TODO LO NECESARIO PARA HACER RESPONSIVA LA PAGINA*/
 
 /*@media only screen and (max-width: 1040px ){

@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8"/>
 	<title>Creathink</title>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
@@ -11,47 +10,58 @@
 	<link rel="stylesheet" type="text/css" href="home.css">
 </head>
 <body>
-	<div class="global">
-		
-		<!--En este lugar mas especificamente en el header se localiza el menu superior y el icono y/o logo de la empresa-->
-		<div id="contMenu">	
-			<div class="contLogo">
-				<div class="logo">
-					CreaThink
-				</div>
-			</div>
-			<div class="contNav">
-				<nav>
-					<ul>
-						<li><a class ="ancla" data-ancla="main">Incio</a></li>
-						<li><a class ="ancla" data-ancla="nosotros">Nosotros</a></li>
-						<li><a class ="ancla" data-ancla="servicio">Servicio</a></li>
-						<li><a class ="ancla" data-ancla="Contactanos">Contactanos</a></li>
-					</ul>
-				</nav>
+	
+	<div id="containerMenu" class="contLateralMenu">
+		<div class="contClose">
+			<div class="close">&times;</div>
+		</div>
+		<div class="contDashboard">
+			<div id="contentDash" class="dash">
+
 			</div>
 		</div>
-		<div id="main">
-
-			<div class="presentacion">
-				<div class="sabemos">Podemos leer tu mente</div>
-
-				<div class="sobre">
+	</div>
+	<div class="global">
+			
+		<!--En este lugar mas especificamente en el header se localiza el menu superior y el icono y/o logo de la empresa-->
+		<div class="home">
+			<div id="contMenu">	
+				<div class="contLogo">
+					<div class="logo">
+						CreaThink
+					</div>
+				</div>
+				<div id="menuResp" class="contNav">
+					<div class="menuIcon">
+						<img src="iconos/menu.svg" height="50px">
+					</div>
+				</div>
+				<div id="menuDesk" class="contNav">
 					
-					<div class="groupPresen">
-						<div class="ti">
-							Sabemos que tienes un negocio, servicios y nosotros queremos que más gente lo conozca.
-						</div>
-						<div class="subGroup">
-							
-							<div class="solucion">
-								<div class="aqui">Ver</div>
+				</div>
+			</div>
+			<div id="main">
+
+				<div class="presentacion">
+					<div class="sabemos">Podemos leer tu mente</div>
+
+					<div class="sobre">
+						
+						<div class="groupPresen">
+							<div class="ti">
+								Sabemos que tienes un negocio o servicio y quieres que más gente lo conozca, nosotros nos encargamos de eso.
+							</div>
+							<div class="subGroup">
+								
+								<div class="solucion">
+									<div class="aqui">Ver</div>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div> 
-			</div>
+					</div> 
+				</div>
 
+			</div>
 		</div>
 
 		<!--ZONA DE LA SECCION "NOSOTROS"-->
@@ -219,7 +229,7 @@
 							</div>
 							<div class="descServ">
 								<div class="sub">
-									Si nosotros creemos en tu idea, imagina tus clientes, platicanos un poco lo que tienes en mente
+									tu negocio mejor que nunca, platicanos un poco lo que tienes en mente
 									y nosotros nos comunicaremos contigo a la brevedad posible,
 									 el éxito de tu negocio está a sólo un click.
 								</div>
@@ -232,7 +242,7 @@
 										<input type="tel" name ="Cel" class="btn" placeholder="312-123-4567"
 										pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
 										<input type="email" name ="email" class="btn" placeholder="tucorreo@ejemplo.com"/>
-										<textarea name="descripcion"  class="txtarea" placeholder="Describenos tu idea lo más resumida posible." id="" cols="30" rows="10"></textarea>
+										<textarea name="descripcion"  class="txtarea" placeholder="Describenos tu idea." id="" cols="30" rows="10"></textarea>
 										<button class="send">Enviar</button>
 									</form>	
 								</div>
@@ -247,6 +257,8 @@
 		</footer>
 	</div>
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	</script>
 </body>
 </html>

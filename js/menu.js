@@ -32,11 +32,13 @@ $(document).ready(function(){
 
     $("#menuResp").click(function(){
         $("#menuResp").css("display","none");
+        $(".global").css("overflow","hidden");
         $(".contLateralMenu").css("display","block");
     });
 
     $(".close").click(function(){
         $(".contLateralMenu").css("display","none");
+        $(".global").css("overflow","auto");
         $("#menuResp").css("display","flex");
     });
 

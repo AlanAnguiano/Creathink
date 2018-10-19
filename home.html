@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8"/>
 	<title>Creathink</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, 
+	initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
@@ -54,7 +55,7 @@
 							<div class="subGroup">
 								
 								<div class="solucion">
-									<div class="aqui">Ver</div>
+									<div class="aqui"><a class ='ancla' data-ancla='servicio'>ver</a></div>
 								</div>
 							</div>
 						</div>
@@ -237,13 +238,13 @@
 							<div class="contForm">
 								<div class="mainForm">
 									<!--FALTA AGREGAR VALIDACIONES AL MOMENTO DE ENVIAR EL FORMULARIO-->
-									<form action="" class="contactanosForm">
-										<input type="text" name ="Name" class="btn" placeholder="Nombre"/>
-										<input type="tel" name ="Cel" class="btn" placeholder="312-123-4567"
-										pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
-										<input type="email" name ="email" class="btn" placeholder="tucorreo@ejemplo.com"/>
-										<textarea name="descripcion"  class="txtarea" placeholder="Describenos tu idea." id="" cols="30" rows="10"></textarea>
-										<button class="send">Enviar</button>
+									<form action="" method="POST" class="contactanosForm">
+										<input type="text" id="Name" name ="name" class="btn" required maxlenght="50" placeholder="Nombre" />
+										<input type="tel" id="cellphone" name ="Cel" class="btn" required maxlength="10" placeholder="Celular"
+										pattern="[0-9]{3}[0-9]{3}[0-9]{4}"/>
+										<input type="email" id="mail" name ="email" class="btn" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required placeholder="tucorreo@ejemplo.com"/>
+										<textarea name="descripcion"  class="txtarea" required placeholder="Describenos tu idea." id="" cols="30" rows="10"></textarea>
+										<button type="submit" id="enviarForm"class="send">Enviar</button>
 									</form>	
 								</div>
 							</div>
@@ -253,7 +254,33 @@
 			</div>
 		</div>
 		<footer>
-			hola
+			<div class="containerFoot">
+				<div class="footInfo">
+					<div class="groupSite">
+						<div class="nameSite logo">
+							CreaThink
+						</div>
+						<div class="contacts">
+							<div><span>Teléfono:</span>  312-193-6602</div>
+							<br>
+							<div><span>Email:</span> aquivael@correo.com</div>
+						</div>
+					</div>
+				</div>
+				<div class="footInfo">
+					<div class="groupSite">
+						<div class="followUs">Síguenos en Facebook!</div>
+						<div class="socialMedia">
+							<a href="facebook.com" target="_blank"><img src="iconos/facebook.svg"></a>
+						</div>
+					</div>
+				</div>
+				<div class="love">
+					<!--Made with love in Colima 10/2018-->
+					Hecho con <img src="iconos/corazon.svg" alt="">
+					en <span>Colima,Colima</span>
+				</div>
+			</div>
 		</footer>
 	</div>
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>

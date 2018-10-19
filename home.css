@@ -36,8 +36,6 @@
     ), url("main3.jpg");
 	background-size: cover;
 }
-#menuPhone{
-}
 .contLateralMenu{
 	display: none;
 	position: fixed;
@@ -56,6 +54,8 @@
 	
 }
 .close{
+	margin-top: 12px;
+	margin-right: 5px;
 	width: 40px;
 	height: 40px;
 	text-align: center;
@@ -153,7 +153,7 @@ ul{
 
 
 }
-a{
+div.contNav a{
 	font-size: 20px;
 	text-align: center;
 	height: 100%;
@@ -242,11 +242,16 @@ a:hover{
 	align-items: center;
 	border-radius: 25px;
 }
+.aqui a{
+	height: auto;
+}
 .aqui:hover{
 	box-shadow: 0 0px 7px 0 var(--main-color);
 	cursor: pointer;
 }
-
+.aqui a:hover{
+	color: #fff;
+}
 
 
 
@@ -560,7 +565,7 @@ a:hover{
 }
 .txtarea:focus{
 	color: var(--main-color);
-	border:2px solid var(--main-color);
+	border:1px solid var(--main-color);
 }
 .txtarea{
 	font-size: 1em;
@@ -602,9 +607,80 @@ footer{
 	margin-top: 40px;
 	display: flex;
 	width: 100%;
-	height: 50px;
+	height: auto;
 	background-color: #212121;
 
+}
+.containerFoot{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+}
+.footInfo{
+	width: 25%;
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.groupSite{
+	width: 75%;
+	height: 85%;
+}
+.nameSite{
+	margin-left: 0px;
+	width: 100%;
+	height: auto;
+	font-size: 30px;
+}
+.contacts{
+	margin-left: 10px;
+	margin-top: 20px;
+	width: 100%;
+	height: auto;
+}
+.contacts div{
+	color: var(--text);
+}
+.contacts div span{
+	color: var(--main-color);
+}
+.followUs{
+	margin-top: 10px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-size: 20px;
+}
+.socialMedia{
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+.socialMedia a img{
+	width: 40px;
+	height: 40px;
+}
+.love{
+	letter-spacing: 1px;
+	font-size: 15px;
+	background: #131313;
+	width: 100%;
+	height: auto;
+	padding: 5px 0px;
+	text-align: center;
+}
+.love img{
+	height: 12px;
+	width: 12px;
+}
+.love span{
+	color: var(--main-color);
 }
 /*TERMINA ZONA DE FOOTER*/
 /*ESTA ZONA ESTA DEDICADA A TODO LO NECESARIO PARA HACER RESPONSIVA LA PAGINA*/
@@ -644,6 +720,18 @@ footer{
 	}
 	.mainForm{
 		width: 90%;
+	}
+	.contacts{
+		text-align: center;
+		margin-left: 0px;
+	}
+	.nameSite{
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	.footInfo{
+		width: 100%;
 	}
 	
 }
